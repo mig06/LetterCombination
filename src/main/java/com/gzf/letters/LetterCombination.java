@@ -51,8 +51,7 @@ public class LetterCombination {
      */
     public void combineLetters(String digits, StringBuilder tempString, List resultList) {
 
-        //校验数字的合法性
-        //add letter to resultList
+        //校验数字的合法性,加入结果集
         if (digits.length() == 0 && tempString.length() != 0) {
             resultList.add(tempString.toString());
             return;
